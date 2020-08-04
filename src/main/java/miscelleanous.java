@@ -24,7 +24,7 @@ public class miscelleanous extends base {
 	   //  driver.hideKeyboard();
 	 	driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();
 	 	
-	 //	((AndroidDriver)driver).pressKey(new KeyEvent(AndroidKey.BACK));
+
 	     
 	 	driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}

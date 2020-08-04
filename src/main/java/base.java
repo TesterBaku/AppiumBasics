@@ -16,7 +16,10 @@ public class base {
 		File fs = new File(f, "ApiDemos-debug.apk");
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
+		
+		
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Rufat");
+		
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		
