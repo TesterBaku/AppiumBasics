@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -12,6 +13,8 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.offset.PointOption;
 
 import static io.appium.java_client.touch.TapOptions.tapOptions;
@@ -69,6 +72,10 @@ public class ecommerce_tc_5 extends baseEcommerce {
 		driver.context("WEBVIEW_com.androidsample.generalstore");
 		
 		driver.findElementByName("q").sendKeys("hello");
+		driver.findElementByName("q").sendKeys(Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.context("NATIVE_APP");
+		
 	}
 	
 
