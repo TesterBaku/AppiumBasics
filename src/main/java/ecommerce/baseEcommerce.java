@@ -19,11 +19,11 @@ public class baseEcommerce {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		
 		
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Rufat");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Rufat2");
 		
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		
-		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 10);
+		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
 		
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		
